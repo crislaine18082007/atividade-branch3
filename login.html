@@ -1,3 +1,31 @@
-<h2>Login</h2>
-<input type="text" placeholder="Usuário">
-<input type="password" placeholder="Senha">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 3 - Git</title>
+  <script defer src="script.js"></script>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    section { margin-bottom: 40px; }
+    input, button { margin-top: 10px; display: block; }
+  </style>
+</head>
+<body>
+  <h1>Atividade 3 - Login e Contador</h1>
+
+  <section>
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="logar()">Entrar</button>
+    <p id="mensagem-login"></p>
+  </section>
+
+  <section>
+    <h2>Contador</h2>
+    <p id="contador">0</p>
+    <button onclick="incrementar()">Incrementar</button>
+    <button onclick="decrementar()">Decrementar</button>
+  </section>
+</body>
+</html>
